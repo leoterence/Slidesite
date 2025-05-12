@@ -98,7 +98,7 @@ export default function Crousel() {
                                         variants={only}>DESIGN</motion.p>
                                         <motion.p
                                             variants={vari}
-                                         className="text-5xl font-bold mb-4 sm:mb-10 sm:text-7xl " style={{filter:'blur(100px)'}}>{img.titre+(id+1)}</motion.p>
+                                         className="text-4xl font-bold mb-4 sm:mb-10 sm:text-7xl " style={{filter:'blur(100px)'}}>{img.titre+(id+1)}</motion.p>
                                         <motion.p
                                             variants={vari}
                                          className="text-xs w-64 block  sm:w-96 text-semibold" style={{filter:'blur(100px)'}}>{img.desc}</motion.p>
