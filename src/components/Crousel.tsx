@@ -111,7 +111,7 @@ export default function Crousel() {
              </Swiper>
         </div>
 
-         <div className=" h-28 w-2/3 mx-auto translate-y-150 ">
+         <div className=" h-28 w-2/3 mx-auto translate-y-130 ">
             <Swiper className=" h-full"
                 onSwiper={setThumbsSwiper}
                 modules={[Navigation,Thumbs,]}
