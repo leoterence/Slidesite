@@ -1,7 +1,7 @@
 'use client'
 
 import { Search } from "lucide-react"
-import { motion, scale } from "motion/react"
+import { motion} from "motion/react"
 import Nav from "@/components/Nav"
 
 const varlog={

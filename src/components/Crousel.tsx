@@ -6,12 +6,12 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import { Navigation, Thumbs, EffectFade } from "swiper/modules"
 import { useState } from "react"
 import { motion,AnimatePresence } from "motion/react"
+import type { Swiper as SwiperType } from 'swiper'
 
 import "swiper/css"
 import "swiper/css/navigation"
 import "swiper/css/thumbs"
 import "swiper/css/effect-fade"
-import { filter } from "motion/react-client"
 const varC={
     init:{opacity:0},
     visible:{opacity:1,
@@ -47,7 +47,7 @@ const only={
 
 
 export default function Crousel() {
-  const [thumbsSwiper, setThumbsSwiper] = useState(null)
+  const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType|null>(null)
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
@@ -66,7 +66,7 @@ export default function Crousel() {
             >
                 {Images.map((img,id)=>{
                     return(
-                        <SwiperSlide className="h-full  w-full">
+                        <SwiperSlide className="h-full  w-full" key={id}>
                                 <motion.div className="h-full w-full" 
                                         initial={{opacity:0}}
                                         animate={{opacity:1}}
@@ -133,7 +133,7 @@ export default function Crousel() {
             >
                 {Images.map((img,id)=>{
                     return(
-                        <SwiperSlide className="h-full  w-full">
+                        <SwiperSlide className="h-full  w-full" key={id}>
                                 <div className="h-full w-full cursor-pointer">
                                     <Image                                   
                                         src={img.name}
