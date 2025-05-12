@@ -25,7 +25,7 @@ export default function Nav() {
         <ul className="flex flex-row gap-x-12 items-center">
             {links.map((link,id)=>{
                 return(
-                    <motion.li key={id} className="cursor-pointer"
+                    <motion.li key={id} className="text-sm cursor-pointer sm:text-md md:text-lg"
                     variants={varli}
                     whileHover='anime'
                     whileTap='tap'

@@ -88,20 +88,20 @@ export default function Crousel() {
                                     />
                                 <AnimatePresence>
                                    {id===activeIndex&&(
-                                     <motion.div className="absolute z-50 left-0 top-1/5 pl-15 md:ml-20"
+                                     <motion.div className="absolute pl-3 z-50 left-0 top-1/5 sm:pl-15 md:pl-22"
                                     variants={varC}
                                     initial='init'
                                     animate='visible'
                                     exit='exit'
                                     >
-                                        <motion.p className="mb-15"
+                                        <motion.p className="mb-10 sm:mb-15"
                                         variants={only}>DESIGN</motion.p>
                                         <motion.p
                                             variants={vari}
-                                         className="text-7xl font-bold mb-10" style={{filter:'blur(100px)'}}>{img.titre+(id+1)}</motion.p>
+                                         className="text-5xl font-bold mb-4 sm:mb-10 sm:text-7xl " style={{filter:'blur(100px)'}}>{img.titre+(id+1)}</motion.p>
                                         <motion.p
                                             variants={vari}
-                                         className="block  w-96 text-semibold" style={{filter:'blur(100px)'}}>{img.desc}</motion.p>
+                                         className="text-xs w-64 block  sm:w-96 text-semibold" style={{filter:'blur(100px)'}}>{img.desc}</motion.p>
                                     </motion.div>
                                    )}
                                 </AnimatePresence>
@@ -149,9 +149,9 @@ export default function Crousel() {
              </Swiper>
         </div>
 
-        <div className="flex mr-15 flex-row gap-x-5 translate-x-10/12 translate-y-20 md:mr-0">
-            <span className="block border px-4 rounded border-white/30 bg-gray-200/40 preve cursor-pointer font-bold text-lg">←</span>
-            <span className="block border px-4 rounded border-white/30 bg-gray-200/40 next cursor-pointer font-bold text-lg">→</span>
+        <div className="flex mr-12 sm:mr-15 flex-row gap-x-2 sm:gap-x-5 translate-x-10/12 translate-y-20 md:mr-0">
+            <span className="block border px-3 sm:px-4 rounded border-white/30 bg-gray-200/40 preve cursor-pointer font-bold text-lg">←</span>
+            <span className="block border px-3 sm:px-4 rounded border-white/30 bg-gray-200/40 next cursor-pointer font-bold text-lg">→</span>
         </div>
 
    </div>

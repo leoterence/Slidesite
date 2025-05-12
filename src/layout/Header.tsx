@@ -20,8 +20,8 @@ const varlog={
 
 export default function Header() {
   return (
-    <div className="flex flex-row  py-5 justify-around ">
-        <motion.span className="text-xl font-semibold cursor-pointer md:text-2xl lg:text-3xl"
+    <div className="flex flex-row  py-5 justify-around items-center">
+        <motion.span className="text-lg sm:text-xl font-semibold cursor-pointer md:text-2xl lg:text-3xl"
             variants={varlog}
             whileHover='anime'
             whileTap='tap'
